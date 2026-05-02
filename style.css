@@ -1,0 +1,95 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Background */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at top, #6c3d16, #492304);
+}
+
+/* Card */
+.card {
+  background: #0d0d0d;
+  padding: 30px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 350px;
+  text-align: center;
+  box-shadow: 0 0 40px rgb(67, 30, 3);
+}
+
+/* Title */
+.card h2 {
+  color: sandybrown;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+}
+
+/* Counter Number */
+#count {
+  font-size: 70px;
+  color: sandybrown;
+  margin-bottom: 25px;
+}
+
+/* Buttons Container */
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* Buttons */
+.btn {
+  flex: 1;
+  padding: 15px;
+  border-radius: 12px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Minus Button */
+.minus {
+  background: #1a1a1a;
+  color: sandybrown;
+}
+
+/* Plus Button */
+.plus {
+  background: linear-gradient(135deg, #ffc74f, #d5a962);
+  color: white;
+}
+
+/* Reset Button */
+.reset {
+  background: transparent;
+  border: 2px solid #444;
+  color: #aaa;
+}
+
+/* Hover Effects */
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  #count {
+    font-size: 50px;
+  }
+
+  .btn {
+    padding: 12px;
+    font-size: 16px;
+  }
+}
